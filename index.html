@@ -73,10 +73,10 @@
 		<p>Egy oázisban tevék és struccok mászkálnak. Összesen 24 fejük és 58 lábuk van. Hány teve és hány strucc van az oázisban?</p>
 		<img class="tevekep" id="oazis" src="src/img/oazis.png" alt="Oázis" title=$ALT>
 		
-		<form> <!-- TODO: use "action=" for the response... but do what? maybe finally jumping into js...? -->
-		Teve: <input type="number" id="teve"></input><br>
-		Strucc: <input type="number" id="strucc"></input><br>
-		<input type="Submit" value="Tipp"></input>
+		<form> <!-- TODO: i am lost as to what to do here LMAO -->
+		<label for="teve">Teve:</label> <input type="text" id="teve" required></input><br>
+		<label for="strucc">Strucc:</label> <input type="text" id="strucc" required></input><br>
+		<input type="Submit" value="Tipp" action="/src/js/form.js"></input><p id="formoutput"></p>
 		</form>
 	</div>
 </body>
