@@ -10,6 +10,7 @@
 <body>
 	<div id="vers">
 		<h1>Romhányi József<sup><a href="#romhanyi">*</a></sup></h1>
+		<hr>
 
 		<p>„Romhányi, a rímhányó” – nem hiába kapta ezt a jelzőt Romhányi József író, költő, akinek többek
 			között a Mézga család, a Dr. Bubó, vagy a Frédi és Béni pazar szövegeit is köszönhetjük.
@@ -61,18 +62,22 @@
 		<p>S evezzevel ava teve<br>
 			levelkévét kivilevelhevelteve.</p>
 		<p id="romhanyi"><sup>*</sup>Született: 1921. március 8. (Nagytétény) - Elhunyt: 1983. május 7. (Budapest)</p>
-		<p>http://www.hirlevelplusz.hu/teve-fohasza-ime-egy-bizonyitek-hogy-romhanyi-jozsef-egy-zseni-volt-video/
-		</p>
-
+		<a target="_blank" rel="noopener noreferrer" href="http://www.hirlevelplusz.hu/teve-fohasza-ime-egy-bizonyitek-hogy-romhanyi-jozsef-egy-zseni-volt-video/" id="jobbra">Forrás</a>
+		<!-- According to a quick search: -->
+		<!-- noopener stops the window.opener (returns which window opened it? some form of id of it, i guess) property from being accessible -->
+		<!-- noreferrer doesnt send url info to the new page-->
+		<!-- despite this being unrelated I guess I better remember this somehow-->
 
 		<h2>Fejtörő</h2>
 
 		<p>Egy oázisban tevék és struccok mászkálnak. Összesen 24 fejük és 58 lábuk van. Hány teve és hány strucc van az oázisban?</p>
 		<img class="tevekep" id="oazis" src="src/img/oazis.png" alt="Oázis" title=$ALT>
-
-		<p>Teve: </p>
-		<p>Strucc: </p>
-
+		
+		<form> <!-- TODO: use "action=" for the response... but do what? maybe finally jumping into js...? -->
+		Teve: <input type="number" id="teve"></input><br>
+		Strucc: <input type="number" id="strucc"></input><br>
+		<input type="Submit" value="Tipp"></input>
+		</form>
 	</div>
 </body>
 
