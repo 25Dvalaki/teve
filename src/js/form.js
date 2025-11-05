@@ -1,11 +1,16 @@
-var teve = document.getElementById('teve').value;
-var strucc = document.getElementById('strucc').value;
-var formoutput = document.getElementById("formoutput");
+ var teve = document.getElementById('teve').value;
+ var strucc = document.getElementById('strucc').value;
+ var formoutput = document.getElementById("formoutput").textContent;
 
-if (teve == 0 || strucc == 0) {
-formoutput = "Hibás adat"
-}
+ function submitstuff(event) {
+          if (teve == "" || strucc == "")
+          formoutput.textContent = "Hibás adat";
+          else if (teve < 5) {
+                    formoutput.textContent = "Ennél több teve van!"; }
+          else if (teve > 5) {
+                     formoutput.textContent = "Ennél kevesebb teve van!";
+          }
+          event.preventDefault();
+ }
 
-// formoutput isnt modified... atleast, page doesn't get it.
-// try Number();'ing the vars, check if theyre nan {(isNaN(var))}
-// actually scratch the above, only number inputs should be valid... darn
+ form.addEventListener("submit", submitstuff);
