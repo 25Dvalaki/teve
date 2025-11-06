@@ -3,7 +3,7 @@
  var formoutput = document.getElementById("formoutput").textContent;
 
  function submitstuff(event) {
-          if (teve == "" || strucc == "")
+          if (teve == 0 || strucc == 0)
           formoutput.textContent = "Hibás adat";
           else if (teve < 5) {
                     formoutput.textContent = "Ennél több teve van!"; }

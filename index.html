@@ -61,8 +61,11 @@
 
 		<p>S evezzevel ava teve<br>
 			levelkévét kivilevelhevelteve.</p>
-		<p id="romhanyi"><sup>*</sup>Született: 1921. március 8. (Nagytétény) - Elhunyt: 1983. május 7. (Budapest)</p>
-		<a target="_blank" rel="noopener noreferrer" href="http://www.hirlevelplusz.hu/teve-fohasza-ime-egy-bizonyitek-hogy-romhanyi-jozsef-egy-zseni-volt-video/" id="jobbra">Forrás</a>
+		<p id="romhanyi"><sup>*</sup>Született: 1921. március 8. (Nagytétény) - Elhunyt: 1983. május 7.
+			(Budapest)</p>
+		<a target="_blank" rel="noopener noreferrer"
+			href="http://www.hirlevelplusz.hu/teve-fohasza-ime-egy-bizonyitek-hogy-romhanyi-jozsef-egy-zseni-volt-video/"
+			id="jobbra">Forrás</a>
 		<!-- According to a quick search: -->
 		<!-- noopener stops the window.opener (returns which window opened it? some form of id of it, i guess) property from being accessible -->
 		<!-- noreferrer doesnt send url info to the new page-->
@@ -70,15 +73,37 @@
 
 		<h2>Fejtörő</h2>
 
-		<p>Egy oázisban tevék és struccok mászkálnak. Összesen 24 fejük és 58 lábuk van. Hány teve és hány strucc van az oázisban?</p>
-		<img class="tevekep" id="oazis" src="src/img/oazis.png" alt="Oázis" title=$ALT>
-		
+		<p>Egy oázisban tevék és struccok mászkálnak. Összesen 24 fejük és 58 lábuk van. Hány teve és hány
+			strucc van az oázisban?</p>
+		<img class="tevekep" id="oazis" src="src/img/oazis.png" alt="Oázis" title=$ALT><br>
+
+		<!-- <label for="name">Név:</label>
+		<input type="text"><br>
+
+		<label for="legs">Hány lába van egy tevének? (Kiegészítendő kérdő mondat...) </label><input
+			type="text"></input>
+		<p>Szereted a tevéket? (Eldöntendő kérdő mondat)</p>
+		<input type="radio" id="true" name="truefalse"><label for="true">Igen</label></input>
+		<br>
+		<input type="radio" id="false" name="truefalse"><label for="false">Nem</label></input>
+		<br>
+		<p>Mit esznek a tevék?</p>
+		<input type="checkbox" name="x1" id="x1"></input>
+		<label for="x1">Kaktusz</label><br>
+
+		<input type="checkbox" name="x2" id="x2"></input>
+		<label for="x2">Homok</label><br>
+
+		<input type="checkbox" name="x3" id="x3"></input>
+		<label for="x3">Dinnye</label><br> -->
+
 		<form formaction="/src/js/form.js"> <!-- TODO: i am lost as to what to do here LMAO -->
-		<label for="teve">Teve:</label> <input type="number" id="teve"></input>
-		<br>
-		<label for="strucc">Strucc:</label> <input type="number" id="strucc"></input>
-		<br>
-		<input type="submit">Tipp</button></button><p id="formoutput"></p>
+			<label for="teve">Teve: </label><input type="number" id="teve"></input>
+			<br>
+			<label for="strucc">Strucc: </label><input type="number" id="strucc"></input>
+			<br>
+			<input type="submit" value="Tipp"></input>
+			<p id="formoutput"></p>
 		</form>
 	</div>
 </body>
