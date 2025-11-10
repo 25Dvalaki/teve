@@ -1,6 +1,7 @@
 body{
 	background-repeat:no-repeat;
 	background-size:cover;
+	background-image:url("/src/img/sivatag.jpg");
 	font-family:cursive;
 }
 
@@ -25,6 +26,19 @@ h1 {
 border: 3px solid orange;
 }
 
+a {
+	color: orange;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+a:hover {
+	color:white;
+	background-color: darkorange;
+	text-decoration: underline;
+}
+
 #vers{
 	width:600px;
 	margin: 0 auto;
@@ -44,4 +58,8 @@ border: 3px solid orange;
 	text-align: right;
 	font-style: italic;
 	font-size: 11px;
+}
+
+#jobbra {
+	text-align: right;
 }
