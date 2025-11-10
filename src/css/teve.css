@@ -21,12 +21,17 @@ input{
 	padding:5px;
 }
 
+h1 {
+border: 3px solid orange;
+}
+
 #vers{
 	width:600px;
 	margin: 0 auto;
 }
 
 #fohasz{
+	text-transform: uppercase;
 	font-style:italic; 
 	text-align:center;  
 }
@@ -35,4 +40,8 @@ input{
 	width:30%;
 }
 
-
+#romhanyi {
+	text-align: right;
+	font-style: italic;
+	font-size: 11px;
+}
